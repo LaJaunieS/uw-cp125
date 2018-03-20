@@ -1,5 +1,5 @@
 package cp120.assignments.geo_shape;
-/*Driver used for demo-ing various functionality of the package*/
+/*Driver used for demo-ing functionality of the package*/
 
 import java.awt.Color;
 
