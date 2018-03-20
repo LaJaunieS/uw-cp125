@@ -15,7 +15,6 @@ public class DList extends DNode {
     //flink and blink point to the head and tail of the list, respectively
     //methods for empty lists do not return null, they return the list itself.
     //flink and blink methods are not null either, they point to the list itself
-    private Object data;
         
     /**Default constructor. Constructs an empty list, with forward and backward
      * links referring to itself, and with <code>null</code> data.
@@ -102,13 +101,12 @@ public class DList extends DNode {
     }
     
     
-    /**Determins if <code>DList</code> is empty, and returns a corresponding
+    /**Determines if <code>DList</code> is empty, and returns a corresponding
      * <code>boolean</code>.
      * @return <code>true</code> if <code>DList</code> is empty, <code>false</code>
      * if it is not.
      */
     public boolean isEmpty() {
-        DNode node;
         //if node refers to itself, it is empty
         return ( this.getHead() == this && this.getTail() == this);
     }
