@@ -1,5 +1,6 @@
 package cp120.d_list;
 
+import cp120.assignments.geo_shape.GeoShape;
 
 /**A <code>DNode</code> instance which implements a doubly-linked list. 
  * Represents the root <code>DNode</code> containing other <code>DNode</code>s 
@@ -11,7 +12,7 @@ package cp120.d_list;
  * @author slajaunie
  *
  */
-public class DList extends DNode {
+public class DList extends DNode<GeoShape> {
     //flink and blink point to the head and tail of the list, respectively
     //methods for empty lists do not return null, they return the list itself.
     //flink and blink methods are not null either, they point to the list itself
@@ -26,14 +27,14 @@ public class DList extends DNode {
     /**Adds the given <code>DNode</code> to the head of this <code>DList</code>
      * @param node the <code>DNode</code> to be added
      */
-    public void addHead(DNode node) {
+    public void addHead(DNode<GeoShape> node) {
         this.addAfter(node);
     }
     
     /**Adds the given <code>DNode</code> to the tail of this <code>DList</code>
      * @param node the <code>DNode</code> to be added
      */
-    public void addTail(DNode node) {
+    public void addTail(DNode<GeoShape> node) {
         this.addBefore(node);
     }
     
@@ -43,7 +44,7 @@ public class DList extends DNode {
      * <code>DList</code> itself if this <code>DList</code> does not contain any 
      * <code>DNode</code>s.
      */
-    public DNode getHead() {
+    public DNode<GeoShape> getHead() {
         return getNext();
     }
     
@@ -53,7 +54,7 @@ public class DList extends DNode {
      * <code>DList</code> itself if this <code>DList</code> does not contain any 
      * <code>DNode</code>s.
      */
-    public DNode getTail() {
+    public DNode<GeoShape> getTail() {
         return getPrevious();
     }
     
@@ -64,11 +65,11 @@ public class DList extends DNode {
      * @return the removed <code>DNode</code>, or this <code>DList</code> as the
      * root.
      */
-    public DNode removeHead() {
+    public DNode<GeoShape> removeHead() {
         //gets flink, since list is the root, refers forward to first item in
         //list
         //if list is empty, returns root
-        DNode head = getNext();
+        DNode<GeoShape> head = getNext();
         return head.remove();
     }
     
@@ -79,9 +80,9 @@ public class DList extends DNode {
      * @return the removed <code>DNode</code>, or this <code>DList</code> as the
      * root.
      */
-    public DNode removeTail() {
+    public DNode<GeoShape> removeTail() {
         //gets this.blink - since the root, refers back to last item in list
-        DNode tail = getPrevious();
+        DNode<GeoShape> tail = getPrevious();
         return tail.remove();
     }
     
@@ -92,7 +93,7 @@ public class DList extends DNode {
     public void removeAll() {
         //while given node doesn't refer to itself (i.e., dequeued or the root),
         //remove it
-        DNode node;
+        DNode<GeoShape> node;
         //System.out.println((node=getNext()) ==this);
         while ( (node=getNext()) != this) {
             node.remove();
@@ -117,7 +118,7 @@ public class DList extends DNode {
      */
     public int size() {
         int count = 0;
-        DNode node = getHead();
+        DNode<?> node = getHead();
         while ( (node != this)) {
             ++count;
             node = node.getNext();

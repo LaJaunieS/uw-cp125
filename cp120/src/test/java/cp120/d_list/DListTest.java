@@ -4,10 +4,12 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import cp120.assignments.geo_shape.GeoShape;
+
 public class DListTest {
 
     DList testDList = new DList();
-    DNode testDNode = new DNode();
+    DNode<?> testDNode = new DNode<Object>();
     
     @Test
     public void testDList() {
@@ -16,35 +18,35 @@ public class DListTest {
 
     @Test
     public void testAddHead() {
-        DNode node = new DNode();
+        DNode<GeoShape> node = new DNode<GeoShape>();
         testDList.addHead(node);
         assertEquals(testDList.getHead(),node);
     }
 
     @Test
     public void testAddTail() {
-        DNode node = new DNode();
+        DNode<GeoShape> node = new DNode<GeoShape>();
         testDList.addTail(node);
         assertEquals(testDList.getTail(),node);
     }
 
     @Test
     public void testGetHead() {
-        DNode node = new DNode();
+        DNode<GeoShape> node = new DNode<GeoShape>();
         testDList.addHead(node);
         assertEquals(testDList.getHead(),node);
     }
 
     @Test
     public void testGetTail() {
-        DNode node = new DNode();
+        DNode<GeoShape> node = new DNode<GeoShape>();
         testDList.addTail(node);
         assertEquals(testDList.getTail(),node);
     }
 
     @Test
     public void testRemoveHead() {
-        DNode node = new DNode();
+        DNode<GeoShape> node = new DNode<GeoShape>();
         testDList.addHead(node);
         assertEquals(testDList.getHead(),node);
         
@@ -54,7 +56,7 @@ public class DListTest {
 
     @Test
     public void testRemoveTail() {
-        DNode node = new DNode();
+        DNode<GeoShape> node = new DNode<GeoShape>();
         testDList.addTail(node);
         assertEquals(testDList.getTail(),node);
         
@@ -65,7 +67,7 @@ public class DListTest {
     @Test
     public void testRemoveAll() {
         for (int i= 0; i < 5; i ++) {
-            DNode node = new DNode(new Integer(i));
+            DNode<GeoShape> node = new DNode<GeoShape>(null);
             testDList.addTail(node);
         }
         testDList.removeAll();
@@ -75,7 +77,7 @@ public class DListTest {
     @Test
     public void testIsEmpty() {
         for (int i= 0; i < 5; i ++) {
-            DNode node = new DNode(new Integer(i));
+            DNode<GeoShape> node = new DNode<GeoShape>(null);
             testDList.addTail(node);
         }
         assertFalse(testDList.isEmpty());
@@ -88,7 +90,7 @@ public class DListTest {
         int expSize = 0;
         testDList.removeAll();
         for (int i= 0; i < 5; i ++) {
-            DNode node = new DNode(new Integer(i));
+            DNode<GeoShape> node = new DNode<GeoShape>(null);
             testDList.addTail(node);
         }
         int listSize = testDList.size();

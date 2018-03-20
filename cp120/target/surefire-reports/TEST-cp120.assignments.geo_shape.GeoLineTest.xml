@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="11" failures="0" name="cp120.assignments.geo_shape.GeoLineTest" time="0.086" errors="0" skipped="0">
+<testsuite tests="11" failures="0" name="cp120.assignments.geo_shape.GeoLineTest" time="0.089" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
     <property name="java.vm.version" value="25.161-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\slajaunie\eclipse-workspace\assignment009\cp120"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\slajaunie\eclipse-workspace\assignment009\uw-java-temp\cp120"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\slajaunie\eclipse-workspace\assignment009\cp120"/>
+    <property name="user.dir" value="C:\Users\slajaunie\eclipse-workspace\assignment009\uw-java-temp\cp120"/>
     <property name="java.runtime.version" value="1.8.0_161-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed"/>
@@ -68,11 +68,11 @@
   <testcase classname="cp120.assignments.geo_shape.GeoLineTest" name="testGetStart" time="0.003"/>
   <testcase classname="cp120.assignments.geo_shape.GeoLineTest" name="testSlope" time="0"/>
   <testcase classname="cp120.assignments.geo_shape.GeoLineTest" name="testGeoLineThreeParamConstructor" time="0"/>
-  <testcase classname="cp120.assignments.geo_shape.GeoLineTest" name="testDraw" time="0.081"/>
+  <testcase classname="cp120.assignments.geo_shape.GeoLineTest" name="testDraw" time="0.072"/>
   <testcase classname="cp120.assignments.geo_shape.GeoLineTest" name="testEquals" time="0"/>
   <testcase classname="cp120.assignments.geo_shape.GeoLineTest" name="testGeoLineTwoParamConstructor" time="0"/>
   <testcase classname="cp120.assignments.geo_shape.GeoLineTest" name="testGetEnd" time="0"/>
-  <testcase classname="cp120.assignments.geo_shape.GeoLineTest" name="testLength" time="0.002"/>
+  <testcase classname="cp120.assignments.geo_shape.GeoLineTest" name="testLength" time="0.014"/>
   <testcase classname="cp120.assignments.geo_shape.GeoLineTest" name="testSetEnd" time="0"/>
   <testcase classname="cp120.assignments.geo_shape.GeoLineTest" name="testSetColor" time="0"/>
   <testcase classname="cp120.assignments.geo_shape.GeoLineTest" name="testSetStart" time="0"/>

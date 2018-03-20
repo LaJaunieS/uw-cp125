@@ -12,12 +12,12 @@ package cp120.d_list;
  * @author slajaunie
  *
  */
-public class DNode {
-    private Object data;
+public class DNode<T> {
+    private T data;
     //link to prev linked item in list
-    private DNode blink;
+    private DNode<T> blink;
     //link to next linked item in list
-    private DNode flink;
+    private DNode<T> flink;
     
     
     
@@ -26,7 +26,7 @@ public class DNode {
      * @param data the <code>Object</code> that is the data contained within the 
      * <code>DNode</code> instance.
      */
-    public DNode(Object data) {
+    public DNode(T data) {
         blink = this;
         flink = this;
         this.data = data;
@@ -52,14 +52,14 @@ public class DNode {
     /**Getter method for the data stored on this <code>DNode</code>
      * @return <code>Object</code> data stored on this <code>DNode</code>
      */
-    public Object getData() {
+    public T getData() {
         return this.data;
     }
     
     /**Setter method for the data stored on this <code>DNode</code>
      * @param data the <code>Object</code> data to be stored on this <code>DNode</code>.
      */
-    public void setData(Object data) {
+    public void setData(T data) {
         this.data = data;
     }
     
@@ -70,7 +70,7 @@ public class DNode {
      * @throws IllegalArgumentException if the given <code>DNode</code> is already 
      * enqueued
      */
-    public DNode addAfter(DNode node) throws IllegalArgumentException {
+    public DNode<T> addAfter(DNode<T> node) throws IllegalArgumentException {
         if (node.isEnqueued()) {
             throw new IllegalArgumentException();
         } else {
@@ -90,7 +90,7 @@ public class DNode {
      * @throws IllegalArgumentException if the given <code>DNode</code> is already 
      * enqueued
      */
-    public DNode addBefore(DNode node) throws IllegalArgumentException {
+    public DNode<T> addBefore(DNode<T> node) throws IllegalArgumentException {
         if (node.isEnqueued()) {
             throw new IllegalArgumentException();
         } else {
@@ -109,7 +109,7 @@ public class DNode {
     /**Dequeues this <code>DNode</code> and de-references it and adjacent nodes.
      * @return this <code>DNode</code>
      */
-    public DNode remove() {
+    public DNode<T> remove() {
         blink.flink= flink;
         flink.blink = blink;
         flink = this;
@@ -121,14 +121,14 @@ public class DNode {
     /**Gets the <code>DNode</code> instance inserted after this <code>DNode</code>
      * @return the <code>DNode</code> instance inserted after this <code>DNode</code>
      */
-    public DNode getNext() {
+    public DNode<T> getNext() {
         return this.flink;
     }
     
     /**Gets the <code>DNode</code> instance inserted before this <code>DNode</code>
      * @return the <code>DNode</code> instance before after this <code>DNode</code>
      */
-    public DNode getPrevious() {
+    public DNode<T> getPrevious() {
         return this.blink;
     }
     
