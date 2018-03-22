@@ -93,9 +93,9 @@ public abstract class GeoShape {
      * <li>If all fields in this <code>GeoShape</code> and <code>that</code> are equal,
      * returns <code>true</code>. Note that the origin fields in both this 
      * <code>GeoShape</code> and <code>that</code> do not need to point to the same 
-     * instance of <code>GeoPoint</code> to be equal. The two <code>GeoPoint</code>s simply
-     * need to point to the same x and y coordinates for this <code>GeoShape</code> 
-     * and <code>that</code> in order to be equal.</li></ol>     * 
+     * <em>instance</em> of <code>GeoPoint</code> to be equal. The two <code>GeoPoint</code>s
+     * simply need to point to the same x and y coordinates for this <code>GeoShape</code> 
+     * and <code>that</code> in order to be equal.</li></ol>
      * @param that a second instance of <code>GeoShape</code> to be tested against this
      * <code>GeoShape</code> for equality
      * @param epsilon a <code>double</code> that is to be the delta against the
