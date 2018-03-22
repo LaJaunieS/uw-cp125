@@ -167,4 +167,17 @@ public class GeoLine extends GeoShape {
         return this.getEdgeColor();
     }
     
+    /** Overrides the <code>toString</code> method in the <code>GeoShape</code>
+     * superclass
+     * @see cp120.assignments.geo_shape.GeoShape#toString()
+     * @return a <code>String</code> in the format "origin=(xco,yco),color=#cccccc,
+     * width=width,height=height" 
+     */
+    @Override
+    public String toString() {
+        return String.format("%s,endpoint=(%.4f,%.4f)",
+                            super.toString(),this.getEnd().getXco(),this.getEnd().getYco());
+     }
+    
+    
 }

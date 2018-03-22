@@ -30,7 +30,8 @@
 //            gp.addShape(shape);
 //        
 //        /*Instantiate the drawing surface and render Shape components*/
-//        gp.show();
+//        //gp.show();
+//        System.out.println(lineY.toString());
 //        
 //    }
 //
