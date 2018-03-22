@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="cp120.d_list.DListTest" time="0.001" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="cp120.d_list.DListTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
@@ -69,7 +69,7 @@
   <testcase classname="cp120.d_list.DListTest" name="testAddTail" time="0"/>
   <testcase classname="cp120.d_list.DListTest" name="testDList" time="0"/>
   <testcase classname="cp120.d_list.DListTest" name="testSize" time="0"/>
-  <testcase classname="cp120.d_list.DListTest" name="testGetHead" time="0.001"/>
+  <testcase classname="cp120.d_list.DListTest" name="testGetHead" time="0"/>
   <testcase classname="cp120.d_list.DListTest" name="testGetTail" time="0"/>
   <testcase classname="cp120.d_list.DListTest" name="testRemoveHead" time="0"/>
   <testcase classname="cp120.d_list.DListTest" name="testRemoveTail" time="0"/>

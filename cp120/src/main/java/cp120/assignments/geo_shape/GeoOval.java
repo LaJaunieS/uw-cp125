@@ -52,12 +52,6 @@ public class GeoOval extends GeoRectangle {
      */
     @Override
     public Shape draw(Graphics2D gtx) {
-        /*For assignment 9:
-         * Use the oval's origin and bounding rectangle to create an Arc2D.Double, 
-         * then pass the Arc2D and Graphics2D objects to the new 
-         * GeoShape.draw( Shape, Graphics2D ) method. Note: you must use an Arc2D 
-         * object in this method. 
-        */
         Arc2D.Double arc = new Arc2D.Double(this.getOrigin().getXco(),
                                             this.getOrigin().getYco(),
                                             this.getWidth(),
@@ -68,6 +62,7 @@ public class GeoOval extends GeoRectangle {
         super.draw(arc, gtx);
         return arc;
         }
+    
     /** Tests equality of this <code>GeoOval</code> and a given 
      * <code>GeoShape</code>.
      * Overrides the <code>equals</code> method of <code>GeoRectangle</code>, providing
@@ -97,7 +92,7 @@ public class GeoOval extends GeoRectangle {
     }
     
     public double perimeter() {
-        /**
+        /*
          *            _______________
          * p = 2pi*  /__a^2__+__b^2__ 
          *          V       2
@@ -114,7 +109,7 @@ public class GeoOval extends GeoRectangle {
     }
     
     public double area() {
-        /**
+        /*
          * a = ab*pi
          */
         double wHalf = this.getWidth()/2;

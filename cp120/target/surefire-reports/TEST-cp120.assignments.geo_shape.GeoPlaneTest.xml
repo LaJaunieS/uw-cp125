@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="cp120.assignments.geo_shape.GeoPlaneTest" time="5.452" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="cp120.assignments.geo_shape.GeoPlaneTest" time="5.034" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
@@ -65,12 +65,12 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testGeoPlane" time="0.904"/>
-  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testRun" time="0.672"/>
-  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testRemoveShape" time="0.647"/>
-  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testPaintComponent" time="0.716"/>
-  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testAddShape" time="0.634"/>
-  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testGetAndSetFrame" time="0.601"/>
-  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testRedraw" time="0.674"/>
-  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testGetAndSetDrawingSurface" time="0.604"/>
+  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testGeoPlane" time="0.802"/>
+  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testRun" time="0.641"/>
+  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testRemoveShape" time="0.58"/>
+  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testPaintComponent" time="0.646"/>
+  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testAddShape" time="0.594"/>
+  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testGetAndSetFrame" time="0.597"/>
+  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testRedraw" time="0.594"/>
+  <testcase classname="cp120.assignments.geo_shape.GeoPlaneTest" name="testGetAndSetDrawingSurface" time="0.58"/>
 </testsuite>

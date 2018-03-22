@@ -13,9 +13,9 @@ import java.util.Objects;
  *
  */
 public class GeoRectangle extends GeoShape {
-    /**the width of the rectangle*/
+    /*the width of the rectangle*/
     private double width;
-    /**the height of the rectangle*/
+    /*the height of the rectangle*/
     private double height;
     
     /**super constructor throws IllegalArgumentException if null origin*/

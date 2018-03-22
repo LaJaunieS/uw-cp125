@@ -12,9 +12,9 @@ import cp120.d_list.*;
  *
  */
 public class GeoPoint {
-    /**The x coordinate of the GeoPoint*/
+    /*The x coordinate of the GeoPoint*/
     private double xco = 0;
-    /**The y coordinate of the GeoPoint*/
+    /*The y coordinate of the GeoPoint*/
     private double yco = 0;
     
     /**Constructs a new GeoPoint, setting x-coordinate and y-coordinate to the given

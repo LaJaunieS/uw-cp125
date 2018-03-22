@@ -20,10 +20,10 @@ public abstract class GeoShape {
     private double edgeWidth = DEFAULT_EDGE_WIDTH;
     private Color edgeColor = DEFAULT_EDGE_COLOR;
     
-    /**The starting point of the GeoShape*/
+    /*The starting point of the GeoShape*/
     private GeoPoint origin;
     
-    /**The color (or edgeColor, depending on what type of shape is
+    /*The color (or edgeColor, depending on what type of shape is
      * instantiated) of the GeoShape*/
     private Color color;
     

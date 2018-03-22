@@ -11,9 +11,9 @@ import java.awt.geom.Line2D;
  *
  */
 public class GeoLine extends GeoShape {
-    /**the starting point/origin of this GeoLine*/ 
+    /*the starting point/origin of this GeoLine*/ 
     private GeoPoint start = this.getOrigin();
-    /**the endpoint of this GeoLine*/
+    /*the endpoint of this GeoLine*/
     private GeoPoint end = new GeoPoint(0,0);
                 
     /**Instantiates a new <code>GeoLine</code>. Chains to the two-parameter

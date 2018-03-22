@@ -29,13 +29,13 @@ import cp120.d_list.DNode;
  *
  */
 public class GeoPlane implements Runnable {
-    /**List holding all nodes containing shapes to be included on the plane*/
+    /*List holding all nodes containing shapes to be included on the plane*/
     private DList list = new DList();
     
-    /**The surface pane- a JPanel*/
+    /*The surface pane- a JPanel*/
     private DrawingSurface surface = new GeoPlane.DrawingSurface();
     
-    /**The JFrame that will hold this instance of DrawingSurface*/
+    /*The JFrame that will hold this instance of DrawingSurface*/
     private JFrame frame = new JFrame();
     
     /**Creates a new instance of <code>GeoPlane</code>. Chains to the one parameter
